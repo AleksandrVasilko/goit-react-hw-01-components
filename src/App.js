@@ -1,5 +1,5 @@
 import Profile from './components/Profile/Profile';
-import users from './user.json';
+import users from './Data fales/user.json';
 
 export default function App() {
   return (
