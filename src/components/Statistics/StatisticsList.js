@@ -1,8 +1,9 @@
 import Statistics from "./Statistics";
+import s from './Statistics.module.css'
 
 function StatisticsList({ items }) { 
     return (
-        <section className="statistics">
+        <section className={s.statistics}>
             <h2 className="title">Upload stats</h2>
             <ul className="stat-list">               
                 {items.map(item => (
