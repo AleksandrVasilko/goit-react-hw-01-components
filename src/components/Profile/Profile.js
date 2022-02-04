@@ -1,31 +1,32 @@
 import PropTypes from 'prop-types';
+import s from './Profile.module.css'
 
-function Profile({ username, tag, location, avatar, statsFollowers, statsViews, statsLikes }) { 
+function Profile({ user}) { 
     return (
-        <div className="profile">
-            <div className="description">
+        <div className={s.profile}>
+            <div className={s.description}>
                 <img
-                    src={avatar}
-                    alt={username}
-                    className="avatar"
+                   src={user.avatar}
+                    alt={user.username}
+                    className={s.avatar}
                 />
-                <p className="name">{username}</p>
-                <p className="tag">@{tag}</p>
-                <p className="location">{location}</p>
+                <p className={s.name}>{user.username}</p>
+                <p className={s.tag}>@{user.tag}</p>
+                <p className={s.location}>{user.location}</p>
             </div>
 
-            <ul className="stats">
+            <ul className={s.stats}>
                 <li>
-                    <span className="label">Followers</span>
-                    <span className="quantity">{statsFollowers}</span>
+                    <span className={s.label}>Followers</span>
+                    <span className={s.quantity}>{user.stats.followers}</span>
                 </li>
                 <li>
-                    <span className="label">Views</span>
-                    <span className="quantity">{statsViews}</span>
+                    <span className={s.label}>Views</span>
+                    <span className={s.quantity}>{user.stats.views}</span>
                 </li>
                 <li>
-                    <span className="label">Likes</span>
-                    <span className="quantity">{statsLikes}</span>
+                    <span className={s.label}>Likes</span>
+                    <span className={s.quantity}>{user.stats.likes}</span>
                 </li>
             </ul>
         </div>
