@@ -1,0 +1,30 @@
+.transactionHistory {
+  border: 2px solid #e7e7e7;
+  margin: auto;
+  width: 780px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+tr,
+td,
+th {
+  border: 2px solid #e7e7e7;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  height: 50px;
+}
+
+tr {
+  text-transform: capitalize;
+}
+
+th {
+  background-color: #00bcd5;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+tr:nth-child(2n) {
+  background-color: #ecf1f4;
+}

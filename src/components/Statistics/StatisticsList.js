@@ -4,8 +4,8 @@ import s from './Statistics.module.css'
 function StatisticsList({ items }) { 
     return (
         <section className={s.statistics}>
-            <h2 className="title">Upload stats</h2>
-            <ul className="stat-list">               
+            <h2 className={s.title}>Upload stats</h2>
+            <ul className={s.statlist}>               
                 {items.map(item => (
                    
                         <Statistics key={item.id}

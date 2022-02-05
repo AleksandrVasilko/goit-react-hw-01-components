@@ -1,0 +1,47 @@
+.status {
+  font-size: 80px;
+  margin-left: 20px;
+}
+
+.friendList {
+  margin: 0;
+  padding: 0;
+}
+
+.friendList img {
+  display: block;
+  width: 150px;
+  margin: 20px 30px;
+  border-radius: 15px;
+  background-color: #50c878;
+}
+
+.name {
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.tag {
+  font-size: 24px;
+  color: #8795a3;
+}
+
+.location {
+  font-size: 24px;
+  color: #8795a3;
+}
+
+.friendList li {
+  max-width: 530px;
+  margin: auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  background-color: #f3f6f9;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+  box-shadow: 10px -10px 10px 0px rgba(34, 60, 80, 0.2);
+}
