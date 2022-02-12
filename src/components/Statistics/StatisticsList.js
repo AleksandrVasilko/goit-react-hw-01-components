@@ -1,18 +1,12 @@
 import Statistics from "./Statistics";
 import s from './Statistics.module.css'
 
-function StatisticsList({ items }) { 
+function StatisticsList({ title, children }) { 
     return (
         <section className={s.statistics}>
-            <h2 className={s.title}>Upload stats</h2>
-            <ul className={s.statlist}>               
-                {items.map(item => (
-                   
-                        <Statistics key={item.id}
-                            label={item.label}
-                            percentage={item.percentage} />
-                    ))}
-            </ul>
+            {title && <h2 className={s.title}>{title}</h2>}
+            
+            {children}
         </section>
     )
 };

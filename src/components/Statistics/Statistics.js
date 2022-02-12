@@ -1,14 +1,22 @@
 import PropTypes from "prop-types";
 import s from './Statistics.module.css'
 
-function Statistics({ label, percentage }) { 
+function Statistics({ items }) { 
     return (
-        <li>              
-            <span className={s.label}>{label}</span>                   
-            <span className={s.percentage}>{percentage}%</span>     
-        </li>
-    )
-};
+        <ul className={s.statlist}>
+            {items.map(item => (
+                <li key={item.id}>
+                    <span className={s.label}>{item.label}</span>
+                    <span className={s.percentage}>{item.percentage}%</span>
+                </li>
+            ))}
+        </ul>
+    );  
+}
+
+
+
+
 
 Statistics.propTypes = {
     label: PropTypes.string,
